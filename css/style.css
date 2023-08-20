@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    width: 100%;
+    /*display: none;*/
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+nav > ul {
+    display: flex;
+    gap: 10px;
+}
+
+nav > ul > li {
+    list-style: none;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    overflow: hidden;
+}
+
+section > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#lunar {
+    transform: translateY(10%);
+}
+
+#quote {
+    position: absolute;
+    margin-top: 100px;
+    right: 1%;
+    padding: 20px;
+    color: white;
+    z-index: -1;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#quote-text {
+    font-style: italic;
+    font-size: 1.7rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#quote-author {
+
+}
+
+main {
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("/img/Space.png");
+}

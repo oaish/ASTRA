@@ -1,2 +1,2 @@
 # ASTRA
-Space Org Website using HTML, CSS, JS
+Space Org Website using `HTML`, `CSS`, `JS`

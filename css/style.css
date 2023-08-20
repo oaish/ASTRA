@@ -3,6 +3,7 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background: #000;
 }
 
@@ -13,24 +14,45 @@ header {
     align-items: center;
     color: white;
     width: 100%;
-    /*display: none;*/
+    padding-top: 20px;
+    z-index: 1000;
+    transition: all 200ms ease;
     font-family: 'Nunito Sans', sans-serif;
 }
 
-nav > ul {
-    display: flex;
-    gap: 10px;
+header:hover {
+    background: rgba(0,0,0,0.5);
 }
 
-nav > ul > li {
-    list-style: none;
-}
-
-nav > ul > li > a {
+header > a {
     text-decoration: none;
     color: white;
 }
 
+header > h1 {
+    margin-left: 100px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav > button {
+    all: unset;
+    list-style: none;
+}
+
+nav > button > a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    transition: all 200ms ease;
+}
+
+nav > button:hover {
+    border-bottom: 2px solid white;
+}
 
 section {
     position: relative;
@@ -49,35 +71,7 @@ section > img {
 }
 
 #lunar {
-    transform: translateY(10%);
-}
-
-#quote {
-    position: absolute;
-    margin-top: 100px;
-    right: 1%;
-    padding: 20px;
-    color: white;
-    z-index: -1;
-}
-
-.glass {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(1px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-#quote-text {
-    font-style: italic;
-    font-size: 1.7rem;
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-#quote-author {
-
+    /*transform: translateY(10%);*/
 }
 
 main {
